@@ -32,16 +32,21 @@ def main():
     """
     
     headers, seq = lees_inhoud(naam) 
-        
-    zoekwoord = input("Geef een zoekwoord op: ")
+    
+    
     x = 0
-    for regel in headers:
-        if zoekwoord in regel:
-            print (regel)
-            print (seq[x])
-            print ("Dit is dna", is_dna(seq[x]))
-            print ("Knipt", knipt(seq[x]))
-        x += 1
+    while x == 0:
+        zoekwoord = input("Geef een zoekwoord op: ")
+        for regel in headers:
+            if zoekwoord in regel:
+                print (regel)
+                print (seq[x])
+                print ("Dit is dna", is_dna(seq[x]))
+                print ("Knipt", knipt(seq[x]))
+                x += 1
+        if x == 0:
+            print ("Sorry! Zoekwoord niet gevonden!")
+        
    # schrijf hier de rest van de code nodig om de aanroepen te doen
 
 #lees de inhoud van het bestand
