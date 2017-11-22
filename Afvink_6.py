@@ -143,5 +143,7 @@ def knipt(seq):
 
     return knipt
 #geeft terug naar main()
-
-main()
+try:
+    main()
+except:
+    print("Oeps! Onbekende fout 2, raadpleeg systeembeheerder!")
