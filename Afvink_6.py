@@ -21,8 +21,8 @@ def main():
             gevonden = True
         except FileNotFoundError:
             print ("Oeps! Dit bestand is niet gevonden!")
-        except FileNotFoundError:
-            print ("Oeps! Dit bestand is niet gevonden!")
+        except IOError:
+            print ("Oeps! Er is iets fout gegaan bij het bestand invoeren!")
         except:
             print ("Oeps! Een onbekende fout, raadpleeg systeembeheerder!")
 
